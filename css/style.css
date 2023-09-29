@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6
 }
 img
 {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 section
@@ -116,7 +116,7 @@ section .heading h2
 }
 .button1:hover
 {
-    background: aqua;
+    background: white;
     color:#d82c2e;
     text-decoration: none;
 }
@@ -133,7 +133,7 @@ section .heading h2
 }
 #skills .progress
 {
-   height: 50px;
+   height: 40px;
    margin: 30px 20px;
    backface-visibility: #ccc;
 }
@@ -176,6 +176,7 @@ section .heading h2
 {
     margin-bottom: 20px;
     position: relative;
+    list-style: none;
 }
 .timeline > li:after
 {
@@ -212,7 +213,7 @@ section .heading h2
 }
 .timeline-panel
 {
-    width: 50%;
+    width: 80%;
     float: right;
     margin-right: 40px;
     border: 1px solid #d4d4d4;
@@ -254,6 +255,40 @@ section .heading h2
 .timeline-heading h4
 {
     color: #d82c2e;
+}
+/* Pour les écrans de taille inférieure ou égale à 768px (par exemple, les téléphones) */
+@media (max-width: 768px) {
+    .timeline:before {
+        display: none; /* Masquer la ligne verticale de la chronologie */
+    }
+
+    .timeline > li {
+        margin-bottom: 40px; /* Augmenter l'espacement entre les éléments de la chronologie */
+    }
+
+    .timeline li .timeline-badge {
+        width: 40px; /* Réduire la taille du badge */
+        height: 40px; /* Réduire la taille du badge */
+        line-height: 40px; /* Réduire la taille du badge */
+        font-size: 16px; /* Réduire la taille de la police du badge */
+        top: 12px; /* Ajuster la position du badge */
+    }
+
+    .timeline-panel-container, .timeline-panel-container-inverted {
+        width: 100%; /* Utiliser toute la largeur de l'écran */
+        float: none; /* Supprimer la flottabilité */
+    }
+
+    .timeline-panel {
+        width: 100%; /* Utiliser toute la largeur de l'écran */
+        float: none; /* Supprimer la flottabilité */
+        margin-right: 0; /* Supprimer la marge de droite */
+        margin-left: 0; /* Supprimer la marge de gauche */
+    }
+
+    .timeline-panel:after {
+        display: none; /* Masquer la flèche du panneau */
+    }
 }
 
 /* EDUCATION */
