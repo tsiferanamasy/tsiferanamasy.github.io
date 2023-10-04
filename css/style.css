@@ -12,6 +12,7 @@ img
 {
     max-width: 75%;
     height: auto;
+    color:#fff;
 }
 section
 {
@@ -30,7 +31,7 @@ section .heading h2
 {
     width: 100px;
     height: 2px;
-    background: #d82c2e;
+    background: #56B8D1;
     margin: 0 auto;
 }
 .white-divider
@@ -45,7 +46,7 @@ section .heading h2
 
 .navbar
 {
-    background: #d82c2e;
+    background: #56B8D1;
     font-size: 17px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -67,7 +68,7 @@ section .heading h2
 }
 .navbar-nav li a:hover, navbar-nav li.active a
 {
-    color: #d82c2e !important;
+    color: #56B8D1 !important;
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle
@@ -84,8 +85,9 @@ section .heading h2
 
 #about
 {
-    padding-top: 100px;
-    background: #d82c2e;
+    padding-top: 80px;
+    background: #56B8D1;
+    text-align: center;
 }
 .profile-picture
 {
@@ -97,10 +99,14 @@ section .heading h2
 {
     color: #fff;
     text-transform: uppercase;
+    font-size: 23px;
 }
-#about .heading h3
+#about .heading p
 {
-    color: #000;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 60px 0 60px;
 }
 .button1
 {
@@ -117,7 +123,7 @@ section .heading h2
 .button1:hover
 {
     background: white;
-    color:#d82c2e;
+    color:#56B8D1;
     text-decoration: none;
 }
 
@@ -129,7 +135,7 @@ section .heading h2
 }
 #skills .heading h2
 {
-    color: #d82c2e;
+    color: #56B8D1;
 }
 #skills .progress
 {
@@ -139,7 +145,7 @@ section .heading h2
 }
 #skills .progress-bar
 {
-    background: #d82c2e;
+    background: #56B8D1;
 }
 #skills .progress h5
 {
@@ -150,7 +156,7 @@ section .heading h2
 
 #experience
 {
-    background: #d82c2e;
+    background: #56B8D1;
 }
 #experience .heading h2
 {
@@ -189,7 +195,7 @@ section .heading h2
 }
 .timeline li .timeline-badge
 {
-    color: #d82c2e;
+    color: #56B8D1;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -254,7 +260,7 @@ section .heading h2
 }
 .timeline-heading h4
 {
-    color: #d82c2e;
+    color: #56B8D1;
 }
 /* Pour les écrans de taille inférieure ou égale à 768px (par exemple, les téléphones) */
 @media (max-width: 768px) {
@@ -299,7 +305,7 @@ section .heading h2
 }
 #education .heading h2
 {
-    color: #d82c2e;
+    color: #56B8D1;
 }
 .education-block
 {
@@ -323,7 +329,7 @@ section .heading h2
 }
 .education-block h3
 {
-    color: #d82c2e; 
+    color: #56B8D1; 
 }
 .education-block h4
 {
@@ -340,11 +346,11 @@ section .heading h2
 
 /* RECOMANDATIONS */
 
-#recommandations
+#projet
 {
-    background: #d82c2e;
+    background: #56B8D1;
 }
-#recommandations .heading h2
+#projet .heading h2
 {
     color: #fff;
 }
@@ -375,11 +381,47 @@ section .heading h2
     font-style: italic;
 }
 
+/*CONTACT*/
+#contact
+{
+   background: #fff; 
+}
+#contact .heading h2
+{
+    color: #56B8D1;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+    color: #000;
+}
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+.paragraphe {
+    border: 1px solid #56B8D1; 
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(162, 216, 248, 0.1);
+}
+.paragraphe p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+.paragraphe:hover {
+    box-shadow: 0 6px 8px rgba(123, 203, 250, 0.2);
+}
+
 /* FOOTER */
 
 footer
 {
-    background: #333;
+    background: #939597;
     padding: 20px 0 40px;
 }
 footer .glyphicon
